@@ -16,17 +16,18 @@ reserved words
   JavaScript has a number of reserved words that you cannot use as identifiers. Reserved words have a specific meaning to the JavaScript language, as they are part of the language syntax. Using a reserved word causes a compilation error when loading your script.
 
   Examples:
-  |break |default |function  |return  |var |
+
+  | break | default | function  | return  | var |
   -----------------------------------------
-  |case  |delete  |if  |switch  |void |
+  | case  | delete  | if  | switch  | void |
   -----------------------------------------
-  |catch  |do  |in  |this  |while |
+  | catch  | do  | in  | this  | while |
   -----------------------------------------
-  |const |else  |instanceof  |throw |with |
+  | const | else  | instanceof  | throw | with |
   -----------------------------------------
-  |continue |finally |let| try | 
+  | continue | finally | let| try | 
   -----------------------------------------
-  |debugger |for |newtypeof|
+  | debugger | for | newtypeof |
   -----------------------------------------
 
 statements vs. expressions -
