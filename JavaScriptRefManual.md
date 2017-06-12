@@ -25,7 +25,7 @@ reserved words
   -----------------------------------------
   | const | else  | instanceof  | throw | with |
   -----------------------------------------
-  | continue | finally | let | try | 
+  | continue | finally | let | try |
   -----------------------------------------
   | debugger | for | newtypeof |
   -----------------------------------------
@@ -37,7 +37,7 @@ statements vs. expressions -
                if (x==y) {
                  do this stuff
                }
-               
+
    An expression is anything that evaluates to a value.  
     examples - "(1 > 0), "a == false", "indexOf(x,"y")"
 
@@ -63,28 +63,42 @@ methods
     **the different uses of . [] {} ;**
       . accessing/calling methods
       . accessing/assigning properties of objects
-      
+
       [] creating arrays i.e.  var my ar= [1,2,3]
       [] access/assign to indexes of arrays ar[0]
       [] access/assign to key of object o["I'm a key"] =4
-      
+
       {} bodies of functions,loops, if/else...
       {} compound statements
       {} create objects {foo:3, 'hi there':9}
-      
+
       ; end of statement without {}
       ; separators between condition pre-post condition in for loops
-      
+
       () surrounds condition
       () calling a function and methods (surrounds arguments)
       () control order of operations (2+3)/2
       () around function parameters in function statements
-    
+
 object links
 anonymous functions
 nested function scope / closures
 exceptions
 try-catch
+  The try statement allows you to define a block of code to be tested for errors while it is being executed.
+
+  The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.
+
+  The finally statement lets you execute code, after try and catch, regardless of the result.
+  Example:
+  try {
+    int result = divide(2,1);
+    System.out.println(result);
+    } catch (BadNumberException e) {
+      //do something clever with the exception
+      System.out.println(e.getMessage());
+    }
+    
 the global namespace
 important functions and objects in the global namespace
 DOM methods and properties
