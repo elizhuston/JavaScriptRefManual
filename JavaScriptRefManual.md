@@ -12,7 +12,7 @@ operations / operators / operands
 
 variables, var
 
-'''reserved words'''
+**reserved words**
   JavaScript has a number of reserved words that you cannot use as identifiers. Reserved words have a specific meaning to the JavaScript language, as they are part of the language syntax. Using a reserved word causes a compilation error when loading your script.
 
   Examples:
@@ -30,7 +30,7 @@ variables, var
   | debugger | for | newtypeof |
   -----------------------------------------
 
-'''statements vs. expressions'''
+**statements vs. expressions**
    a statement is any valid piece of code that ends in a either a semi colon termination or is enclosed within {}.
       examples var a = true;
                console.log("Write this out to console please");
