@@ -9,7 +9,16 @@ values, data types
 operations / operators / operands
 variables, var
 reserved words
-statements vs. expressions
+statements vs. expressions -
+   a statement is any valid piece of code that ends in a either a semi colon termination or is enclosed within {}.
+      examples var a = true;
+               console.log("Write this out to console please");
+               if (x==y) {
+                 do this stuff
+               }
+               
+   An expression is anything that evaluates to a value.  
+    examples - "(1 > 0), "a == false", "indexOf(x,"y")"
 variables vs. values
 if-else
 while
@@ -35,7 +44,7 @@ methods
     () calling a function and methods (surrounds arguments)
     () control order of operations (2+3)/2
     () around function parameters in function statements
-    
+
 
 object links
 anonymous functions
