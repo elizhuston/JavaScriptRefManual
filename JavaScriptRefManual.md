@@ -25,7 +25,7 @@ reserved words
   -----------------------------------------
   | const | else  | instanceof  | throw | with |
   -----------------------------------------
-  | continue | finally | let| try | 
+  | continue | finally | let | try | 
   -----------------------------------------
   | debugger | for | newtypeof |
   -----------------------------------------
