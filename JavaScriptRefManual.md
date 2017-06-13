@@ -84,17 +84,20 @@ If used postfix, with operator after operand (for example, x++), then it returns
 If used prefix with operator before operand (for example, --x), then it returns the value after incrementing or decrementing.
 
 Example:
-
+```
 // Postfix
 var x = 3;
 y = x++; // y = 3, x = 4
 // Prefix
 var a = 2;
 b = --a; // a = 1, b = 1
+```
 
-
-Operands are the values that are being manipulated in the operation by the operators.
-```var a = 12 + 1; // 12 and 1 are the operands
+**Operands** are the values that are being manipulated in the operation by the operators.
+For example:
+```
+var a = 12 + 1; // 12 and 1 are the operands
+var x= a + 20// a and 20 are the operands
 ```
 
 ### Variables, Var
@@ -108,6 +111,7 @@ TBD - Elizabeth
   break, default, function, return, var, case, delete, if, switch, void, catch, do, in, this, while, const, else, instanceof, throw, with, continue, finally, let, try, debugger, for, newtypeof
 
 ### Statements vs. Expressions
+
    A **statement** is any valid piece of code that ends in a either a semi colon termination or is enclosed within {}.
       examples ``var a = true;``
                ``console.log("Write this out to console please");``
@@ -123,6 +127,7 @@ indexOf(x,"y")``
 
 ### Variables vs. Values
  TBD - Elizabeth
+
 ### if-else
 
     An IF-ELSE statement executes a block of code if a specified condition is true.  If the condition is false, another block of code can be executed.
