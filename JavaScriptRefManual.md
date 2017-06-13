@@ -93,30 +93,49 @@ objects
 
 ###Methods
 
-    **the different uses of . [] {} ;**
-      . accessing/calling methods
-      . accessing/assigning properties of objects
+###The Different Uses of . [] {} ;
+  . accessing/calling methods
+  . accessing/assigning properties of objects
 
-      [] creating arrays i.e.  var my ar= [1,2,3]
-      [] access/assign to indexes of arrays ar[0]
-      [] access/assign to key of object o["I'm a key"] =4
+  [] creating arrays i.e.  var my ar= [1,2,3]
+  [] access/assign to indexes of arrays ar[0]
+  [] access/assign to key of object o["I'm a key"] =4
 
-      {} bodies of functions,loops, if/else...
-      {} compound statements
-      {} create objects {foo:3, 'hi there':9}
+  {} bodies of functions,loops, if/else...
+  {} compound statements
+  {} create objects {foo:3, 'hi there':9}
 
-      ; end of statement without {}
-      ; separators between condition pre-post condition in for loops
+  ; end of statement without {}
+  ; separators between condition pre-post condition in for loops
 
-      () surrounds condition
-      () calling a function and methods (surrounds arguments)
-      () control order of operations (2+3)/2
-      () around function parameters in function statements
+  () surrounds condition
+  () calling a function and methods (surrounds arguments)
+  () control order of operations (2+3)/2
+  () around function parameters in function statements
 
 object links
 anonymous functions
-nested function scope / closures
-exceptions
+
+###Nested Function Scope / Closures
+  Nested functions are functions within functions.  The advantage of nested functions is they have access to the scope "above" them which allows them to use variable declared in the parent.
+
+  Closure allows a self-invoking function to access private variables within the parent.  The variable is protected by the scope of the anonymous function, and can only be changed using the add function.
+
+  Example:
+
+    var add = (function () {
+      var counter = 0;
+      return function () {return counter += 1;}
+    })();
+
+add();
+
+###Exceptions
+  When a JavaScript statement generates an error, it is said to throw an exception.  Instead of proceeding to the next statement, the JavaScript interpreter checks for exception handling code.  If there is no exception handler, then the program returns from whatever function threw the exception.  This is repeated for each function on the call stack until an exception handler is found or until the top level function is reached, causing the program to terminate.
+
+  There are seven built in error objects: Error, Range Error, Reference Error, Syntax Error, Type Error, URIError, Eval Error
+
+  <https://www.sitepoint.com/exceptional-exception-handling-in-javascript/>
 
 ###Try-Catch
   The try statement allows you to define a block of code to be tested for errors while it is being executed.
@@ -125,13 +144,14 @@ exceptions
 
   The finally statement lets you execute code, after try and catch, regardless of the result.
   Example:
-  try {
-    int result = divide(2,1);
-    System.out.println(result);
-    } catch (BadNumberException e) {
-      //do something clever with the exception
-      System.out.println(e.getMessage());
-    }
+    
+    try {
+      int result = divide(2,1);
+      System.out.println(result);
+      } catch (BadNumberException e) {
+        //do something clever with the exception
+        System.out.println(e.getMessage());
+      }
 
 ###The Global Namespace
 
@@ -143,7 +163,8 @@ Important Functions and Objects in the Global Namespace
   The Document Object Model (DOM) is a cross-platform and language-independent application programming interface that treats an HTML, XHTML, or XML document as a tree structure wherein each node is an object representing a part of the document. The objects can be manipulated programmatically and any visible changes occurring as a result may then be reflected in the display of the document.[
 
   Essential DOM Methods:
-    https://www.impressivewebs.com/10-essential-dom-methods-techniques-for-practical-javascript/
+
+  <https://www.impressivewebs.com/10-essential-dom-methods-techniques-for-practical-javascript/>
 
 ###Event Handlers
   Event Handlers are JavaScript code that execute JavaScript when something happens, such as pressing a button, moving your mouse over a link, submitting a form etc.
