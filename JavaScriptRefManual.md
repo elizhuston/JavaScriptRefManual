@@ -3,12 +3,12 @@
 
 **Write a reference manual for the Javascript language. For each of the following topics, provide a description and (where applicable) a simple example:**
 
-###Values, data types -
+### Values, data types -
   Every value  has a type which affects what kind of data it can store — for example in JavaScript a variable with a data type of **Boolean** only holds true/false values, whereas a **String** holds text strings, an **int** holds whole numbers, etc.  A value's data type also affects which operations are valid on that value. For example, an integer can be multiplied by an integer, but not by a string.   Literal values differ in how they are declared by their type as well.  Number values are expressed without quotes - 1,2,3
   Strings are expressed with either double quotes or single quotes, "1",'2'
   Booleans are always expressed in lower case - either true or false.
 
-###Operations / Operators / Operands
+### Operations / Operators / Operands
 
 An **operation** is a statement that uses one of the built-in **operators** to return a value.  Examples are assignment operations, arithmetic operations and logical operations.
 An assignment operation example
@@ -107,7 +107,7 @@ TBD - Elizabeth
 
   break, default, function, return, var, case, delete, if, switch, void, catch, do, in, this, while, const, else, instanceof, throw, with, continue, finally, let, try, debugger, for, newtypeof
 
-###Statements vs. Expressions
+### Statements vs. Expressions
    A **statement** is any valid piece of code that ends in a either a semi colon termination or is enclosed within {}.
       examples ``var a = true;``
                ``console.log("Write this out to console please");``
@@ -121,9 +121,9 @@ TBD - Elizabeth
 a == false
 indexOf(x,"y")``
 
-variables vs. values
-
-###if-else
+### Variables vs. Values
+ TBD - Elizabeth
+### if-else
 
     An IF-ELSE statement executes a block of code if a specified condition is true.  If the condition is false, another block of code can be executed.
 
@@ -133,7 +133,7 @@ variables vs. values
     "twelve is not less than eighteen";
 }```
 
-###while
+### While
 
     A WHILE loop is a control statement that allows code to be executed repeatedly based on a given boolean condition.  As long as the condition is true, the loop will continue to run.  The loop stops when the condition is false.
 
@@ -142,7 +142,7 @@ variables vs. values
     i++;
 }```
 
-###for
+### for
 
     A FOR loop is a control statement that allows code to be executed a number of times.  That number is set within the for loop syntax.  A FOR loop contains three statements:
 
@@ -159,13 +159,16 @@ variables vs. values
     text += "The number is " + i + "<br>"; //Code to be executed each time the FOR loop executes a loop
 }```
 
-for-in
+### for-in
+ TBD
 
-functions
+### functions
+TBD
 
-local vs. global variables
+### local vs. global variables
+TBD
 
-###Arrays
+### Arrays
 
   Arrays are a collection of values, stored together as a single object.  Arrays in JavaScript can include multiple data types.  So, for example, the following two array formats are both valid:
 
@@ -177,11 +180,13 @@ local vs. global variables
 
   Values in the array can be accessed using the syntax ArrayName[indexValue].  So for example, if you wanted to call "squirrel" from the animals array above, the command animals[1] should be called.  This will return the value at index position 1, which is "squirrel".
 
-objects
+### Objects
+TBD
 
-###Methods
+### Methods
+TBD
 
-###The Different Uses of . [] {} ;
+### The Different Uses of . [] {} ;
   . accessing/calling methods
   . accessing/assigning properties of objects
 
@@ -201,10 +206,13 @@ objects
   () control order of operations (2+3)/2
   () around function parameters in function statements
 
-object links
-anonymous functions
+### object links
+TBD
 
-###Nested Function Scope / Closures
+### anonymous functions
+TBD
+
+### Nested Function Scope / Closures
   Nested functions are functions within functions.  The advantage of nested functions is they have access to the scope "above" them which allows them to use variable declared in the parent.
 
   Closure allows a self-invoking function to access private variables within the parent.  The variable is protected by the scope of the anonymous function, and can only be changed using the add function.
@@ -218,14 +226,14 @@ anonymous functions
 
 add();
 
-###Exceptions
+### Exceptions
   When a JavaScript statement generates an error, it is said to throw an exception.  Instead of proceeding to the next statement, the JavaScript interpreter checks for exception handling code.  If there is no exception handler, then the program returns from whatever function threw the exception.  This is repeated for each function on the call stack until an exception handler is found or until the top level function is reached, causing the program to terminate.
 
   There are seven built in error objects: Error, Range Error, Reference Error, Syntax Error, Type Error, URIError, Eval Error
 
   <https://www.sitepoint.com/exceptional-exception-handling-in-javascript/>
 
-###Try-Catch
+### Try-Catch
   The try statement allows you to define a block of code to be tested for errors while it is being executed.
 
   The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.
@@ -241,18 +249,18 @@ add();
         System.out.println(e.getMessage());
       }
 
-###The Global Namespace
+### The Global Namespace
 
   Global namespace is the area where a developer can define variables that can be used anywhere within the code.  The global namespace should be used sparingly because items scoped globally will not be eligible for garbage collection.
 
 Important Functions and Objects in the Global Namespace
 
-###DOM Methods and Properties
+### DOM Methods and Properties
   The Document Object Model (DOM) is a cross-platform and language-independent application programming interface that treats an HTML, XHTML, or XML document as a tree structure wherein each node is an object representing a part of the document. The objects can be manipulated programmatically and any visible changes occurring as a result may then be reflected in the display of the document.[
 
   Essential DOM Methods:
 
   <https://www.impressivewebs.com/10-essential-dom-methods-techniques-for-practical-javascript/>
 
-###Event Handlers
+### Event Handlers
   Event Handlers are JavaScript code that execute JavaScript when something happens, such as pressing a button, moving your mouse over a link, submitting a form etc.
