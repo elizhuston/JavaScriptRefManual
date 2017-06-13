@@ -15,11 +15,11 @@ operations / operators / operands
 
 variables, var
 
-### Reserved Words 
+### Reserved Words
   JavaScript has a number of reserved words that you cannot use as identifiers. Reserved words have a specific meaning to the JavaScript language, as they are part of the language syntax. Using a reserved word causes a compilation error when loading your script.
 
   Examples:
-  
+
   break, default, function, return, var, case, delete, if, switch, void, catch, do, in, this, while, const, else, instanceof, throw, with, continue, finally, let, try, debugger, for, newtypeof
 
 ###Statements vs. Expressions
@@ -35,11 +35,41 @@ variables, var
 
 variables vs. values
 
-if-else
+###if-else
 
-while
+    An IF-ELSE statement executes a block of code if a specified condition is true.  If the condition is false, another block of code can be executed.
 
-for
+    ```if (12 < 18) {
+    "twelve is less than eighteen";
+} else {
+    "twelve is not less than eighteen";
+}```
+
+###while
+
+    A WHILE loop is a control statement that allows code to be executed repeatedly based on a given boolean condition.  As long as the condition is true, the loop will continue to run.  The loop stops when the condition is false.
+
+    ```while (i < 10) {
+    text += "The number is " + i;
+    i++;
+}```
+
+###for
+
+    A FOR loop is a control statement that allows code to be executed a number of times.  That number is set within the for loop syntax.  A FOR loop contains three statements:
+
+    - Statement 1 is executed before the loop (the code block) starts.
+
+    - Statement 2 defines the condition for running the loop (the code block).
+
+    - Statement 3 is executed each time after the loop (the code block) has been executed.
+
+    ```for (i = 0; //Statement 1
+      i < 5; //Statement 2
+      i++ //Statement 3
+      ) {
+    text += "The number is " + i + "<br>"; //Code to be executed each time the FOR loop executes a loop
+}```
 
 for-in
 
@@ -117,4 +147,3 @@ Important Functions and Objects in the Global Namespace
 
 ###Event Handlers
   Event Handlers are JavaScript code that execute JavaScript when something happens, such as pressing a button, moving your mouse over a link, submitting a form etc.
-
