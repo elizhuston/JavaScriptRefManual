@@ -165,13 +165,13 @@ indexOf(x,"y")``
 }```
 
 ### for-in
- TBD
+ TBD - Ravi
 
 ### functions
-TBD
+TBD - Ravi
 
 ### local vs. global variables
-TBD
+TBD -Ravi
 
 ### Arrays
 
@@ -186,10 +186,10 @@ TBD
   Values in the array can be accessed using the syntax ArrayName[indexValue].  So for example, if you wanted to call "squirrel" from the animals array above, the command animals[1] should be called.  This will return the value at index position 1, which is "squirrel".
 
 ### Objects
-TBD
+TBD - David
 
 ### Methods
-TBD
+TBD - David
 
 ### The Different Uses of . [] {} ;
   . accessing/calling methods
@@ -212,10 +212,10 @@ TBD
   () around function parameters in function statements
 
 ### object links
-TBD
+TBD - David
 
 ### anonymous functions
-TBD
+TBD - David
 
 ### Nested Function Scope / Closures
   Nested functions are functions within functions.  The advantage of nested functions is they have access to the scope "above" them which allows them to use variable declared in the parent.
