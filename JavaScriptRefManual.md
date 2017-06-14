@@ -101,7 +101,13 @@ var x= a + 20// a and 20 are the operands
 ```
 
 ### Variables, Var
-TBD - Elizabeth
+ Variables store values in memory for use during the execution of the program. They are created in javaScript  with the "Var" keyword. Variables in a JavaScript program must be declared somewhere within scope before using it. Variables are declared with the var keyword. Storing a value in a variable is called variable initialization. You can do variable initialization at the time of variable creation or at a later point in time when you need that variable.
+
+ ```
+ var foo; \\ declared but not initialized
+ foo = "assign to foo"; \\ assigning a value to an already declared variable
+ var bar = foo; \\ declared and initialized in one statement
+ ```
 
 ### Reserved Words
   JavaScript has a number of reserved words that you cannot use as identifiers. Reserved words have a specific meaning to the JavaScript language, as they are part of the language syntax. Using a reserved word causes a compilation error when loading your script.
@@ -125,8 +131,8 @@ TBD - Elizabeth
 a == false
 indexOf(x,"y")``
 
-### Variables vs. Values
- TBD - Elizabeth
+### Variables , Values
+ Variable values determine the type of the variable in javaScript.  JavaScript is an untyped language. This means that a JavaScript variable can hold a value of any data type. Unlike many other languages, you don't have to tell JavaScript during variable declaration what type of value the variable will hold. The value type of a variable can change during the execution of a program and JavaScript takes care of it automatically.
 
 ### if-else
 
