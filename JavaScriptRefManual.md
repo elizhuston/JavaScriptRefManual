@@ -128,6 +128,19 @@ add();
   Global namespace is the area where a developer can define variables that can be used anywhere within the code.  The global namespace should be used sparingly because items scoped globally will not be eligible for garbage collection.
 
 Important Functions and Objects in the Global Namespace
+  Global functions and objects are built into JavaScript and available at all times.
+
+  JavaScript Global Property Examples:
+     
+    Infinity, NaN, undefined
+
+  JavaScript Global Function Examples:
+
+    String(), eval(), parseInt(), parseFloat()
+
+  Global Object Examples:
+    
+    Number, Date, Math, String, Array
 
 ###DOM Methods and Properties
   The Document Object Model (DOM) is a cross-platform and language-independent application programming interface that treats an HTML, XHTML, or XML document as a tree structure wherein each node is an object representing a part of the document. The objects can be manipulated programmatically and any visible changes occurring as a result may then be reflected in the display of the document.[
@@ -138,4 +151,3 @@ Important Functions and Objects in the Global Namespace
 
 ###Event Handlers
   Event Handlers are JavaScript code that execute JavaScript when something happens, such as pressing a button, moving your mouse over a link, submitting a form etc.
-
