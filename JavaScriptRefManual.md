@@ -186,10 +186,19 @@ TBD -Ravi
   Values in the array can be accessed using the syntax ArrayName[indexValue].  So for example, if you wanted to call "squirrel" from the animals array above, the command animals[1] should be called.  This will return the value at index position 1, which is "squirrel".
 
 ### Objects
-TBD - David
+In JavaScript, almost everything is an object.  All JavaScript values, except primitives (i.e., 3.14, "John", true), are objects.  Objects are variables containing variables.  This syntax for creating an object looks like this:
+
+For an object with a single variable:
+var person = "John Doe";
+
+For an object with multiple variables:
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+These variables inside objects are called properties.
 
 ### Methods
-TBD - David
+JavaScript methods are the actions that can be performed on objects.  There are many existing JavaScript methods, but you an also create your own methods.  You can create and call methods.
+
 
 ### The Different Uses of . [] {} ;
   . accessing/calling methods
