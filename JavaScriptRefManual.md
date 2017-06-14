@@ -1,5 +1,4 @@
 # JavaScript Reference Manual
-**Bold** to `JS` - use backticks to show excerpt as ``
 
 **Write a reference manual for the Javascript language. For each of the following topics, provide a description and (where applicable) a simple example:**
 
@@ -305,7 +304,7 @@ Important Functions and Objects in the Global Namespace
   Global functions and objects are built into JavaScript and available at all times.
 
   JavaScript Global Property Examples:
-     
+
     Infinity, NaN, undefined
 
   JavaScript Global Function Examples:
@@ -313,7 +312,7 @@ Important Functions and Objects in the Global Namespace
     String(), eval(), parseInt(), parseFloat()
 
   Global Object Examples:
-    
+
     Number, Date, Math, String, Array
 
 ### DOM Methods and Properties
