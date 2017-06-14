@@ -1,5 +1,4 @@
 # JavaScript Reference Manual
-**Bold** to `JS` - use backticks to show excerpt as ``
 
 **Write a reference manual for the Javascript language. For each of the following topics, provide a description and (where applicable) a simple example:**
 
@@ -101,7 +100,13 @@ var x= a + 20// a and 20 are the operands
 ```
 
 ### Variables, Var
-TBD - Elizabeth
+ Variables store values in memory for use during the execution of the program. They are created in javaScript  with the "Var" keyword. Variables in a JavaScript program must be declared somewhere within scope before using it. Variables are declared with the var keyword. Storing a value in a variable is called variable initialization. You can do variable initialization at the time of variable creation or at a later point in time when you need that variable.
+
+ ```
+ var foo; \\ declared but not initialized
+ foo = "assign to foo"; \\ assigning a value to an already declared variable
+ var bar = foo; \\ declared and initialized in one statement
+ ```
 
 ### Reserved Words
   JavaScript has a number of reserved words that you cannot use as identifiers. Reserved words have a specific meaning to the JavaScript language, as they are part of the language syntax. Using a reserved word causes a compilation error when loading your script.
@@ -125,8 +130,23 @@ TBD - Elizabeth
 a == false
 indexOf(x,"y")``
 
-### Variables vs. Values
- TBD - Elizabeth
+### Variables , Values
+ Variable values determine the type of the variable in javaScript.  JavaScript is an untyped language. This means that a JavaScript variable can hold a value of any data type. Unlike many other languages, you don't have to tell JavaScript during variable declaration what type of value the variable will hold. The value type of a variable can change during the execution of a program and JavaScript takes care of it automatically.
+
+for
+  The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.
+
+  Syntax:
+  for ([initialization]; [condition]; [final-expression])
+   statement
+
+  Example:
+  The following for statement starts by declaring the variable i and initializing it to 0. It checks that i is less than nine, performs the two succeeding statements, and increments i by 1 after each pass through the loop.
+
+    for (var i = 0; i < 9; i++) {
+      console.log(i);
+      // more statements
+    }
 
 ### if-else
 
@@ -151,27 +171,49 @@ indexOf(x,"y")``
 
     A FOR loop is a control statement that allows code to be executed a number of times.  That number is set within the for loop syntax.  A FOR loop contains three statements:
 
-    - Statement 1 is executed before the loop (the code block) starts.
+for-in
+  The for/in statement loops through the properties of an object.
+  The block of code inside the loop will be executed once for each property.
+  Note: Do not use the for/in statement to loop through arrays where index order is important. Use the for statement instead.
+  example:
+    var person = {fname:"John", lname:"Doe", age:25};
+    var text = "";
+    var x;
+    for (x in person) {
+      text += person[x];
+    }
 
-    - Statement 2 defines the condition for running the loop (the code block).
+functions
+  A JavaScript function is a block of code designed to perform a particular task.
+  ex:
+    function myFunction(a, b) {
+      return a * b;                // Function returns the product of a and b
+    }
 
-    - Statement 3 is executed each time after the loop (the code block) has been executed.
+  A JavaScript function is executed when "something" invokes it (calls it).
+  ex:
+    var x = myFunction(4, 3);     //result will be 8
 
-    ```for (i = 0; //Statement 1
-      i < 5; //Statement 2
-      i++ //Statement 3
-      ) {
-    text += "The number is " + i + "<br>"; //Code to be executed each time the FOR loop executes a loop
-}```
-
-### for-in
- TBD - Ravi
-
-### functions
-TBD - Ravi
-
-### local vs. global variables
-TBD -Ravi
+local vs. global variables
+  Local:
+  Variables declared within a JavaScript function, become LOCAL to the function.
+  Local variables have local scope: They can only be accessed within the function.
+  Example:
+    // code outside the below function cannot use carName variable.
+    function myFunction() {
+      var carName = "Volvo";
+      // code here can use carName
+    }
+  Global:
+  A variable declared outside a function, becomes GLOBAL.
+  A global variable has global scope: All scripts and functions on a web page can access it.
+  Example:
+    carName can be used with in or outside the functions
+    var carName = " Volvo";
+    // code here can use carName
+    function myFunction() {
+      // code here can use carName
+    }
 
 ### Arrays
 
@@ -268,6 +310,19 @@ add();
   Global namespace is the area where a developer can define variables that can be used anywhere within the code.  The global namespace should be used sparingly because items scoped globally will not be eligible for garbage collection.
 
 Important Functions and Objects in the Global Namespace
+  Global functions and objects are built into JavaScript and available at all times.
+
+  JavaScript Global Property Examples:
+
+    Infinity, NaN, undefined
+
+  JavaScript Global Function Examples:
+
+    String(), eval(), parseInt(), parseFloat()
+
+  Global Object Examples:
+
+    Number, Date, Math, String, Array
 
 ### DOM Methods and Properties
   The Document Object Model (DOM) is a cross-platform and language-independent application programming interface that treats an HTML, XHTML, or XML document as a tree structure wherein each node is an object representing a part of the document. The objects can be manipulated programmatically and any visible changes occurring as a result may then be reflected in the display of the document.[
@@ -276,5 +331,5 @@ Important Functions and Objects in the Global Namespace
 
   <https://www.impressivewebs.com/10-essential-dom-methods-techniques-for-practical-javascript/>
 
-### Event Handlers
+###Event Handlers
   Event Handlers are JavaScript code that execute JavaScript when something happens, such as pressing a button, moving your mouse over a link, submitting a form etc.
