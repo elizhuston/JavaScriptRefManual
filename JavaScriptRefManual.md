@@ -35,29 +35,6 @@ variables, var
 
 variables vs. values
 
-if-else
-  Conditional statements are used to perform different actions based on different conditions.
-  Use the if statement to specify a block of JavaScript code to be executed if a condition is true.
-  Use the else statement to specify a block of code to be executed if the condition is false.
-  Example:
-  If we have to implement this condition in JavaScript "If the hour is less than 18, create a "Good day" greeting, otherwise "Good evening", it will be as follows...
-
-    if (hour < 18) {
-      greeting = "Good day";
-    } else {
-      greeting = "Good evening";
-    }
-  The result of greeting will be: Good day
-
-while
-  The while loop loops through a block of code as long as a specified condition is true.
-  Example:
-    In the following example, the code in the loop will run, over and over again, as long as a variable (i) is less than 10:
-    while (i < 10) {
-      text += "The number is " + i;
-      i++;
-    }
-
 for
   The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.
 
@@ -72,6 +49,26 @@ for
       console.log(i);
       // more statements
     }
+
+###if-else
+
+    An IF-ELSE statement executes a block of code if a specified condition is true.  If the condition is false, another block of code can be executed.
+
+    ```if (12 < 18) {
+    "twelve is less than eighteen";
+} else {
+    "twelve is not less than eighteen";
+}```
+
+###while
+
+    A WHILE loop is a control statement that allows code to be executed repeatedly based on a given boolean condition.  As long as the condition is true, the loop will continue to run.  The loop stops when the condition is false.
+
+    ```while (i < 10) {
+    text += "The number is " + i;
+    i++;
+}```
+
 
 for-in
   The for/in statement loops through the properties of an object.
@@ -186,7 +183,7 @@ add();
 
   The finally statement lets you execute code, after try and catch, regardless of the result.
   Example:
-    
+
     try {
       int result = divide(2,1);
       System.out.println(result);
