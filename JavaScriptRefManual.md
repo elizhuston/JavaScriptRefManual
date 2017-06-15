@@ -167,11 +167,7 @@ for
     i++;
 }```
 
-### for
-
-    A FOR loop is a control statement that allows code to be executed a number of times.  That number is set within the for loop syntax.  A FOR loop contains three statements:
-
-for-in
+### for-in
   The for/in statement loops through the properties of an object.
   The block of code inside the loop will be executed once for each property.
   Note: Do not use the for/in statement to loop through arrays where index order is important. Use the for statement instead.
@@ -183,7 +179,7 @@ for-in
       text += person[x];
     }
 
-functions
+### functions
   A JavaScript function is a block of code designed to perform a particular task.
   ex:
     function myFunction(a, b) {
@@ -194,7 +190,7 @@ functions
   ex:
     var x = myFunction(4, 3);     //result will be 8
 
-local vs. global variables
+### local vs. global variables
   Local:
   Variables declared within a JavaScript function, become LOCAL to the function.
   Local variables have local scope: They can only be accessed within the function.
