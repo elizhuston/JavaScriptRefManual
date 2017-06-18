@@ -259,10 +259,30 @@ JavaScript methods are the actions that can be performed on objects.  There are 
   () around function parameters in function statements
 
 ### object links
-TBD - David
+In JavaScript, all objects can have properties.  One of these properties is the prototype.  The prototype inherits from the parent object's prototype, which inherits from its object prototype, which continues all the way up the prototype chain or tree.  When you instantiate an object by invoking a function using the "new" operator, the new object inherits all the properties in the prototype of that function.  This new object can access all of these properties that it has inherited from its prototype.  JavaScript, when looking for a property of an object, will first check the object itself for the property.  If the property cannot be found, JavaScript will then work up the prototype chain, to find the property.  If the property is not found in the chain, the property is considered undefined.
+
+These prototype properties can be dynamically changed for a given object.  The prototype of an object can also be changed.
 
 ### anonymous functions
-TBD - David
+Anonymous functions are functions that are dynamically declared at runtime.  They are called anonymous functions because they are not given a name like other functions.  The way in which they're declared is also different.  A function is typically declared using a declaration, as follows:
+
+    function doSomeMath()
+    {
+        answer = 2+2;
+        return answer;
+    }
+    doSomeMath();
+
+However, an anonymous function is declared using the function operator, as shown below:
+
+    var flyToTheMoon = function()
+    {
+        answer = 2+2;
+        return answer;
+    }
+    doSomeMath();
+
+Anonymous functions are primary a convenience when the name of the function does not matter.
 
 ### Nested Function Scope / Closures
   Nested functions are functions within functions.  The advantage of nested functions is they have access to the scope "above" them which allows them to use variable declared in the parent.
